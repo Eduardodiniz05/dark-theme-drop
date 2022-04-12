@@ -35,7 +35,7 @@ body {
 
 h1 {
     margin: 0;
-    color: var(--headings)
+    color: var(--color-headings)
 }
 
 p {
@@ -75,11 +75,15 @@ label::after {
     transition: 0.3s;
 }
 
+input:checked + label {
+    background-color: var(--color-headings);
+}
+
 input:checked + label::after {
     left: calc(100% - 3px);
     transform: translateX(-100%);
 }
 
 label:active::after {
-    width: 45px;
+    width: 25px;
 }
