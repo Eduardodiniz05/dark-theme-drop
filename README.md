@@ -1,11 +1,11 @@
-# __Relogio__
+# **Dark/Light Theme**
 
-## __Primeira Imagem__
-![Relogio01](assets/relogio01.png)
+## __Sobre o Projeto__
 
-## __Segunda imagem__
+### Projeto desenvolvido com  a função de alterar a color para darkMode ou para lightMode conforme o user escolha
 
-![Segunda imagem](assets/relogio02.png)
+ ### Primeira imagem, modo luz
+![LightMode](./public/images/lightmode.png)
 
-
-### Relogio desenvolvido usando __JAVASCRIPT__, __HTML__ e __CSS__.
+### Segunda imagem modo escuro
+![DarkMode](./public/images/darkmode.png)
