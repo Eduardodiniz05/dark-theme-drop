@@ -19,12 +19,13 @@ const darkMode = {
     colorHeadings:"#3664FF",
     colorText: "#B5B5B5",
 }
-// (/([A-Z])/) expressão regular que vai procurar todas as letras maiusculas e alterar para minusculas
-const transformKey = key => "--" + key.replace(/([A-Z])/, "-$1")
+// (/([A-Z])/) expressão regular que vai procurar todas as letras maiusculas e alterar para minusculas sendo armazenados no $1
+const transformKey = key => 
+    "--" + key.replace(/([A-Z])/, "-$1").toLowerCase();
 
 const changeColors = (colors) => {
      Object.keys(colors).map(key => {
-         html.style.setProperty('--bg', '#333333')
+         html.style.setProperty(transformKey(key), colors[key]);
      })
 }
 
